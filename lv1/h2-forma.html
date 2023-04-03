@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			
+			max-width: 24rem;
+		}
+		
+		.group {
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+		}
+		
+		input[type="text"] {
+			padding: 0.25rem;
+		}
+		
+		input[type="submit"] {
+			align-self: center;
+			padding: 0.25rem 1rem;
+		}
+	</style>
+	
+	<title>lv1-h2</title>
+</head>
+
+<body>
+	<form action="./h2-racun.php" method="GET">
+		<div class="group">
+			<label for="a">Varijabla a</label>
+			<input type="text" name="a" id="a">
+		</div>
+		
+		<div class="group">
+			<label for="b">Varijabla b</label>
+			<input type="text" name="b" id="b">
+		</div>
+		
+		<div class="group">
+			<label for="c">Varijabla c</label>
+			<input type="text" name="c" id="c">
+		</div>
+		
+		<input type="submit" value="Izračunaj">
+	</form>
+</body>
+
+</html>
